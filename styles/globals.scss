@@ -1,0 +1,21 @@
+@use 'animate.css/animate';
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000000;
+  overflow: hidden;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

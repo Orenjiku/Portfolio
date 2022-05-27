@@ -1,0 +1,39 @@
+@use '../variables' as v;
+
+$initialAnimationDelay: 1;
+
+.container {
+  font-family: 'Syncopate';
+  font-size: 2.4rem;
+  cursor: default;
+  user-select: none;
+
+  .text {
+    display: inline-block;
+    min-width: 10px;
+  }
+
+  //:global selector is used to access zoomIn animation from globally declared animate.css, otherwise sass modules assume zoomIn is locally scoped and will hash the name
+  .textAnimateInitial :global {
+    animation-name: zoomIn;
+    animation-duration: 1s;
+    animation-delay: #{$initialAnimationDelay}s;
+    animation-fill-mode: both;
+  }
+
+  .textAnimateHover {
+    &:hover :global {
+      color: v.$pink;
+      animation: rubberBand;
+      animation-duration: 0.5s;
+      animation-timing-function: ease-in-out;
+    }
+  }
+}
+
+//adds 0.1 second delay to each letter of 'web developer'
+@for $i from 1 through 13 {
+  .textAnimateInitial._#{$i} {
+    animation-delay: #{$initialAnimationDelay + $i / 10}s;
+  }
+}

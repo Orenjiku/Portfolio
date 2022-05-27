@@ -1,0 +1,28 @@
+@use 'variables' as v;
+
+.buttonContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: 3rem;
+  padding: 0.5rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.1));
+  border-bottom-right-radius: 0.5rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  z-index: v.$aux-z-index;
+
+  .auxButton {
+    all: unset;
+    color: white;
+    cursor: pointer;
+
+    .icon {
+      color: white;
+      font-size: v.$icon-size;
+    }
+  }
+}

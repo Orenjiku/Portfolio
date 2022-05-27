@@ -1,0 +1,7 @@
+@use '../variables' as v;
+
+.g {
+  @include v.header-svg;
+  stroke-width: 1mm;
+  filter: drop-shadow(3px 3px 5px v.$pink);
+}

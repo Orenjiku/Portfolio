@@ -1,0 +1,38 @@
+.textBox {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  top: 50%;
+  left: 14rem;
+  transform: translateY(-50%);
+  color: #FAFAFA;
+  font-family: 'Teko';
+
+  .header {
+    display: flex;
+    user-select: none;
+    height: 10rem;
+
+    h1 {
+      position: absolute;
+      font-family: 'Teko';
+      &:hover {
+        color: #FF007F;
+      }
+    }
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+      width: 7rem;
+    }
+    .rightMask {
+      position: relative;
+      overflow: hidden;
+      width: 25rem;
+    }
+  }
+}

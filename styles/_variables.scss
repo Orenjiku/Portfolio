@@ -1,0 +1,23 @@
+//theme colors
+$teal: #03C0C1;
+$pink: #F40552;
+
+//z-index overview
+$home-header-z-index: 100;
+$sidebar-z-index: 100;
+$aux-z-index: 200;
+$eye-icon-z-index: 200;
+
+//sidebar
+$sidebar-width: 9.5rem;
+$sidebar-btn-width: 8rem;
+$sidebar-btn-height: 3.2rem;
+
+$icon-size: 1.8rem;
+
+@mixin header-svg {
+  stroke: #FFFFFF;
+  stroke-linecap: round;
+  fill: transparent;
+  fill-rule: evenodd;
+}

@@ -1,0 +1,37 @@
+@use '../variables' as v;
+
+.container {
+  position: fixed;
+  width: v.$sidebar-width;
+  height: 100vh;
+  z-index: v.$sidebar-z-index;
+
+  .navBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.25rem;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+    box-shadow: 5px 0 10px 0 rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+
+    a {
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+    }
+
+    .socialBarContainer {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      bottom: 2rem;
+    }
+  }
+}

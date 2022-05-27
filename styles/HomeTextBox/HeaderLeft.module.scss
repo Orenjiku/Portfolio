@@ -1,0 +1,23 @@
+@use '../variables' as v;
+
+.letters {
+  @include v.header-svg;
+  stroke-width: 0.4mm;
+  filter: drop-Shadow(2px 2px 2px #FAFAFA);
+}
+
+.leftTopMask {
+  position: relative;
+  overflow: hidden;
+  height: 4.5rem;
+  svg {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.leftBotMask {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
